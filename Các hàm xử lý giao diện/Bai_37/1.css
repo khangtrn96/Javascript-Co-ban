@@ -1,0 +1,51 @@
+.thanhxanh {
+    height: 38px;
+    background: #4267b2;
+}
+
+.muiten {color:blue;
+    cursor: pointer;}
+.muiten:hover{
+    color: white;
+}
+.muitentrang{
+    color: white;
+}
+
+.motphantu {
+    position: relative;
+    float: right;
+    margin-right: 200px;
+    /* color: white; */
+
+}
+
+.danhsach {
+    position:  absolute;
+    right: -10px;
+    top: 38px;
+    width: 138px;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.danhsach:after {
+    position:  absolute;
+    top: -20px;
+    right: 5px;
+    content:  "";
+    border: 10px #ffa50000 solid;
+    border-bottom-color: white;
+}
+li.list-group-item:hover {
+    background: #2196F3;
+}
+
+li.list-group-item {
+    font-size:  13px;
+    padding:  10px 10px;
+}
+.xuathien{
+    opacity: 1;
+    transition: 0.1s;
+}
