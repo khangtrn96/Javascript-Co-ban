@@ -1,0 +1,24 @@
+{margin: 0;padding: 0;}
+
+.card{
+	/*Có transition thì ta sẽ thấy rõ hiệu ứng hơn. Nếu không có transition thì hiệu ứng xảy ra tức thì*/
+	transition: 0.4s;
+}
+
+.diquaphai{
+	/*Cách 1:Sử dụng transition*/
+	/*transform: translateX(350px);*/
+
+	/*Cách 2:Sử dụng animation*/
+	animation: dichchuyen 1s forwards;/*ten là dichchuyen có thời gian là 1 giây*/
+}
+@-webkit-keyframes dichchuyen {
+	/*Cách 1: Dùng from to*/
+    /*from {transform: translateX(0);}
+    to {transform: translateX(300px);}*/
+
+    /*Cách 2: Dùng phần trăm*/
+    0% {transform: translateX(0); margin-top: 0px; opacity: 1;}
+    50% {transform: translateX(400px); margin-top: 0px; opacity: 1;}
+    100% {transform: translateX(400px); margin-top: 200px; opacity: 0}
+}

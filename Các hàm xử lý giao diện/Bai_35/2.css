@@ -1,0 +1,29 @@
+{margin: 0;padding: 0;}
+
+.dichchuyen1{
+	animation: chuyendong1 3s forwards!important;/*Nếu tồn tại một class khác xử lý chuyển động thì sẽ ưu tiên class dichchuyen1 hơn(ở đây #kcd bị mất quyền ưu tiên)*/
+}
+@-webkit-keyframes chuyendong1{
+	0%{transform: translateX(0) translateY(0) ;}
+	50%{transform: translateX(200px) translateY(0) ;}
+	80%{transform: translateX(200px) translateY(200px) ;}
+	100%{transform: translateX(400px) translateY(200px) ;}
+}
+
+
+/*Tạo animation chuyển động*/
+#kcd{
+	animation: chuyendong2 3s forwards;
+}
+
+@-webkit-keyframes chuyendong2{
+	0%{transform: translateX(400px) translateY(200px) ;}
+	50%{transform: translateX(200px) translateY(200px) ;}
+	80%{transform: translateX(200px) translateY(0) ;}
+	100%{transform: translateX(0px) translateY(0) ;}
+};
+
+/*Tạo class ko-dong có nhiệm vụ không chuyển động khi có #kcd và ta gắn !important dể ưu tiên class ko-dong khi có sự tham gia của các class khác*/
+.ko-dong{
+	animation: none!important;
+}

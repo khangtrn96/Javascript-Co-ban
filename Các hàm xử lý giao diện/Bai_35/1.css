@@ -1,0 +1,21 @@
+{margin: 0;padding: 0;}
+
+.dichchuyen1{
+	animation: chuyendong1 1s forwards;
+}
+@-webkit-keyframes chuyendong1{
+	0%{transform: translateX(0) translateY(0) ;}
+	50%{transform: translateX(200px) translateY(0) ;}
+	80%{transform: translateX(200px) translateY(200px) ;}
+	100%{transform: translateX(400px) translateY(200px) ;}
+}
+
+.dichchuyen2{
+	animation: chuyendong2 1s forwards;
+}
+@-webkit-keyframes chuyendong2{
+	0%{transform: translateX(400px) translateY(200px) ;}
+	50%{transform: translateX(200px) translateY(200px) ;}
+	80%{transform: translateX(200px) translateY(0) ;}
+	100%{transform: translateX(0px) translateY(0) ;}
+};
